@@ -26,7 +26,8 @@
 
 /* dark-02 */
 .text-gray,
-.fact-number {
+.fact-number,
+.footer-paragraph {
     color: #424242;
 }
 
@@ -167,6 +168,25 @@ main>section {
     border-radius: 8px;
 }
 
+#exp-badge {
+    padding: 45px 42px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+    bottom: 130px;
+    right: 70px;
+}
+
+#exp-year {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.featured {
+    width: 100%;
+}
+
 .feature-card .feature-title {
     font-size: 20px;
     font-weight: 600;
@@ -224,7 +244,22 @@ main>section {
     filter: grayscale(100%)
 }
 
+/* footer */
 
+footer {
+    max-width: 1440px;
+    background-color: #FFF4E7;
+    margin: 110px 240px 250px 175px;
+
+}
+
+.footer-paragraph {
+    text-align: center;
+    padding: 40px 410px 40px 410px;
+    margin: 0;
+
+
+}
 
 
 /* resposive media query */
@@ -232,7 +267,9 @@ main>section {
 
     .navbar,
     .nav-link,
-    .teams {
+    .teams,
+    .features,
+    .featured {
         flex-direction: column;
     }
 
@@ -256,10 +293,19 @@ main>section {
     justify-items: center;
     gap: 50px;
 }
+
+#exp-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
 }
 
 @media screen and (min-width: 576px) and (max-width:992px) {
-    .teams {
+
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -272,5 +318,10 @@ main>section {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #exp-badge {
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
