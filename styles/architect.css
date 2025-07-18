@@ -16,7 +16,9 @@
 /* dark-01 */
 .brand,
 .banner-title,
-.dark1 {
+.dark1,
+.section-title,
+.feature-title {
     color: #131313;
 }
 
@@ -149,6 +151,33 @@ main>section {
 }
 
 /* some facts */
+.features {
+    gap: 136px;
+}
+
+#h3-title {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 21px;
+}
+
+.feature-card {
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-card .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+
+/* our sponsor */
 .facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -194,6 +223,9 @@ main>section {
     grid-template-columns: repeat(5, 1fr);
     filter: grayscale(100%)
 }
+
+
+
 
 /* resposive media query */
 @media screen and (max-width: 576px) {
